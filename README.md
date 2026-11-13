@@ -63,9 +63,10 @@
 aotixpy-supplement/
 ├── info.json                       mod 元数据
 ├── changelog.txt                   更新日志（首条版本须与 info.json 一致）
-├── thumbnail.png                   门户缩略图
+├── thumbnail.png                   门户缩略图（512×512）
 ├── CREDITS.md                      致谢与来源说明
 ├── LICENSE                         GPL-3.0
+├── .gitignore / .gitattributes     忽略打包产物与本地密钥，统一 LF
 ├── locale/
 │   ├── en/en.cfg                   英文回退（模组名 / 描述）
 │   └── zh-CN/
@@ -103,6 +104,10 @@ $env:FACTORIO_API_KEY = '<你的 API Key>'
 
 也可以把 `$ApiKey = '...'` 写进 `tools/config.local.ps1`（已被 `.gitignore` 忽略）。
 需要代理时设置 `$env:HTTPS_PROXY` 或传 `-Proxy http://127.0.0.1:7890`。
+
+> 注意：门户的 `category` / `license` 是**枚举值**，不是显示名。
+> `license` 可用 `gnugplv3`、`gnulgplv3`、`mit` 等；传 "GNU GPLv3" 这类显示名会被静默忽略，
+> 结果页面上 License 显示为 N/A（该字段只在首次发布时写入，之后只能在网页端 Edit 修改）。
 
 ## 六、致谢
 
