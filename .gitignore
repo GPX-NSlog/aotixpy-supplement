@@ -1,0 +1,26 @@
+# Build output
+/dist/
+/.thumbwork/
+
+# Local secrets (Factorio Mod Portal API key etc.)
+/tools/config.local.ps1
+.env
+*.local
+*.local.ps1
+
+# Locally extracted upstream language files used by tools/build (not redistributed)
+/tools/build/en/
+/tools/build/modzh/
+/tools/build/extra/
+/tools/build/aotixpy/
+/tools/build/*.json
+
+# Editor and local tooling
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# OS files
+Thumbs.db
+.DS_Store
