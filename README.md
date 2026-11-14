@@ -2,6 +2,8 @@
 
 [aotixpy](https://mods.factorio.com/mod/aotixpy)「pY 特调翻译」的**独立补充汉化包**，只补原汉化与 pY 模组自身都没覆盖到的词条。
 
+- 门户页面：<https://mods.factorio.com/mod/aotixpy-supplement>
+- 源码仓库：<https://github.com/GPX-NSlog/aotixpy-supplement>
 - 游戏版本：Factorio 2.1
 - mod 名称：`aotixpy-supplement`
 - 依赖：全部为**可选依赖**（`?`），既可配合 aotixpy 使用，也可单独启用

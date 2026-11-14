@@ -53,7 +53,7 @@ info = collections.OrderedDict([
     ('title', '✔️pY特调翻译·补充包'),
     ('author', 'Gpx；译名基准来自 aotix 的 aotixpy，原文版权归 pY 系列模组作者 Pyanodon 及贡献者'),
     ('contact', ''),
-    ('homepage', ''),
+    ('homepage', 'https://github.com/GPX-NSlog/aotixpy-supplement'),
     ('description',
      '「[color=orange]pY特调翻译[/color]」的补充汉化包，独立成模组，可单独使用，不与原模组冲突。\n'
      '[color=green]覆盖内容[/color]：pY 精简（Pyanodons Streamlined）的物品分类名、多产物配方名称、'
