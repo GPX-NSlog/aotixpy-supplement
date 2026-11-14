@@ -55,17 +55,12 @@ info = collections.OrderedDict([
     ('contact', ''),
     ('homepage', 'https://github.com/GPX-NSlog/aotixpy-supplement'),
     ('description',
-     '「[color=orange]pY特调翻译[/color]」的补充汉化包，独立成模组，可单独使用，不与原模组冲突。\n'
-     '[color=green]覆盖内容[/color]：pY 精简（Pyanodons Streamlined）的物品分类名、多产物配方名称、'
-     '设置项与描述；以及 pY 各模组中仍显示英文的残留词条（风向/潮汐属性、信标调节、科技名等）。\n'
-     '[color=green]加载顺序[/color]：通过可选依赖排在 aotixpy 与各 pY 模组之后，因此译文优先生效；'
-     '未安装 aotixpy 时也可单独使用。\n'
-     '[color=green]原则[/color]：只新增词条，不覆盖、不修改任何原模组的文件与文本。\n'
-     '[color=green]致谢[/color]：\n'
-     '- 原汉化 aotixpy（作者：aotix，GPL-3.0）：https://mods.factorio.com/mod/aotixpy\n'
-     '- pY 系列模组（作者：Pyanodon 及贡献者）：https://mods.factorio.com/user/pyanodon\n'
-     '- 本包的术语与译名一律沿用上述既有译文，仅补其未覆盖的部分。\n'
-     '详细来源、引用文件与许可证见 CREDITS.md。'),
+     # 门户把这个字段直接当作 Summary 展示，且不渲染 BBCode / Markdown，
+     # 所以只写一句纯文本；详细说明放在门户的 Description 字段（见 PORTAL.md）。
+     '「pY 特调翻译」的补充汉化包，独立成模组。'
+     '补全 pY 精简（Pyanodons Streamlined）的物品分类名、多产物配方名称、设置项与描述，'
+     '以及 pY 各模组仍显示英文的残留词条，共 360 条。'
+     '全部为可选依赖，可单独启用，不覆盖或修改任何原模组的文件与文本。'),
     ('factorio_version', FACTORIO_VERSION),
     ('dependencies', [d.strip('"') for d in deps]),
 ])
